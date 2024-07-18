@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JSON Response</title>
+</head>
+<body class="body-response">
+    <pre id="jsonResponse"></pre>
+    <script>
+        const jsonResponse = {
+            "success": "0860200002 : saved successfully. Appointment No: --220427000002--"
+        };
+
+        document.getElementById('jsonResponse').textContent = JSON.stringify(jsonResponse, null, 2);
+    </script>
+</body>
+</html>
